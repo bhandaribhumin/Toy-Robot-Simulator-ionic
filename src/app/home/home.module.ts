@@ -8,7 +8,6 @@ import { HomePageRoutingModule } from "./home-routing.module";
 import { BoardComponentModule } from "../component/board/board.module";
 import { ManualComponentModule } from "../component/manual/manual.module";
 import { CommandComponentModule } from "../component/command/command.module";
-import { BoardViewComponentModule } from "../component/board-view/board.module";
 
 @NgModule({
   imports: [
@@ -19,7 +18,6 @@ import { BoardViewComponentModule } from "../component/board-view/board.module";
     BoardComponentModule,
     CommandComponentModule,
     ManualComponentModule,
-    BoardViewComponentModule,
   ],
   declarations: [HomePage],
 })

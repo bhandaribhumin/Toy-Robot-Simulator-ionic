@@ -19,7 +19,7 @@ export class CommandComponent implements OnInit {
     //debugger;
     if (cmd) {
       let command: Command;
-      command = this.commandService.parse(cmd);
+      command = this.commandService.parse(cmd.toUpperCase());
       if (command.cmd == COMMAND_DICT.NOT_VALID) {
         this.commandReceived.emit({
           msg: GLOBALS.SYS_MSG[COMMAND_DICT.NOT_VALID],

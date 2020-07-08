@@ -25,7 +25,6 @@ export class Robot implements IMoveAble {
 
   public mapCommand(command: Command): string {
     if (command) {
-      console.log("command", command);
       if (this.robotHasBeenPlaced) {
         switch (command.cmd) {
           case COMMAND_DICT.LEFT:
@@ -43,7 +42,6 @@ export class Robot implements IMoveAble {
         }
       }
       if (!this.robotHasBeenPlaced && command.cmd == COMMAND_DICT.PLACE) {
-        console.log("place");
         return this.placeValidate(command.args);
       } else return GLOBALS.SYS_MSG[GLOBALS.PLACEMENT_CONSTRAINT];
     }
@@ -144,8 +142,6 @@ export class Robot implements IMoveAble {
       this.validate(+args[0], +args[1]) &&
       args[2][0].toLowerCase().match("[nesw]")
     ) {
-      console.log("args[0]", args[0]);
-      console.log("args[2][0]]", args[2][0]);
       if (parseInt(args[0]) > 0) {
         this.left = 20 * parseInt(args[0]) + "%";
       }
