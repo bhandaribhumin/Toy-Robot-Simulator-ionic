@@ -8,7 +8,7 @@ Environment: ionic, cordova
 
 Clone this Repo
 
-> \$ git clone https://github.com/bhandaribhumin/Toy-Robot-Simulator.git
+> \$ git clone https://github.com/bhandaribhumin/Toy-Robot-Simulator-ionic.git
 
 In root of the app run npm install
 
@@ -85,20 +85,27 @@ Example Input and Output:
 
 i.
 
+```ruby
+
 > PLACE 0 0 NORTH
 > MOVE
 > REPORT
 > Output: 0,1,NORTH
 
+```
+
 ii.
 
+```ruby
 > PLACE 0 0 NORTH
 > LEFT
 > REPORT
 > Output: 0,0,WEST
+```
 
 iii.
 
+```ruby
 > PLACE 1 2 EAST
 > MOVE
 > MOVE
@@ -106,3 +113,4 @@ iii.
 > MOVE
 > REPORT
 > Output: 3,3,NORTH
+```
